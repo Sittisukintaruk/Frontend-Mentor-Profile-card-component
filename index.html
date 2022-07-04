@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="font-sans relative overflow-hidden bg-Dark-cyan">
+    <div
+      class="absolute bottom-0 lg:right-0 -z-20 translate-y-2/4 translate-x-40"
+    >
+      <svg width="978" height="978" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a">
+            <stop stop-color="#0989B4" stop-opacity="0" offset="0%" />
+            <stop stop-color="#53FFEE" offset="99.94%" />
+          </linearGradient>
+        </defs>
+        <ellipse
+          fill="url(#a)"
+          transform="scale(1 -1) rotate(45 1669.55 0)"
+          cx="489"
+          cy="489"
+          rx="489"
+          ry="488"
+          fill-rule="evenodd"
+          opacity=".25"
+        />
+      </svg>
+    </div>
+    <div
+      class="absolute top-0 left-0 -z-20 -translate-x-3/4 lg:-translate-x-1/4 -translate-y-2/4"
+    >
+      <svg width="978" height="978" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a">
+            <stop stop-color="#0989B4" stop-opacity="0" offset="0%" />
+            <stop stop-color="#53FFEE" offset="99.94%" />
+          </linearGradient>
+        </defs>
+        <ellipse
+          fill="url(#a)"
+          transform="rotate(-135 489 489)"
+          cx="489"
+          cy="489"
+          rx="489"
+          ry="488"
+          fill-rule="evenodd"
+          opacity=".5"
+        />
+      </svg>
+    </div>
+
+    <main class="grid place-items-center h-screen">
+      <div class="bg-white text-center rounded-xl overflow-hidden">
+        <div class="w-full select-none">
+          <img class="w-full" src="./images/bg-pattern-card.svg" alt="card" />
+        </div>
+        <div>
+          <div class="p-4 relative">
+            <div
+              class="overflow-hidden p-2 w-32 h-32 bg-white rounded-full absolute left-2/4 right-2/4 top-0 -translate-x-2/4 -translate-y-2/4"
+            >
+              <img
+                class="w-full rounded-full"
+                src="./images/image-victor.jpg"
+                alt="victor"
+              />
+            </div>
+            <div class="flex justify-center gap-2 mt-14">
+              <h3 class="font-bold text-lg text-Very-dark-desaturated-blue">
+                Victor Crest
+              </h3>
+              <span class="font-bold text-lg text-Dark-gray">26</span>
+            </div>
+            <span class="text-Dark-gray text-base">London</span>
+          </div>
+          <div class="flex mt-4 justify-around border-t border-Dark-gray p-4">
+            <div
+              class="flex flex-col font-normal tracking-wide text-Dark-gray text-sm"
+            >
+              <span class="font-bold text-Very-dark-desaturated-blue text-lg"
+                >80K</span
+              >
+              Followers
+            </div>
+            <div
+              class="flex flex-col font-normal tracking-wide text-Dark-gray text-sm"
+            >
+              <span class="font-bold text-Very-dark-desaturated-blue text-lg"
+                >803K</span
+              >
+              Likes
+            </div>
+            <div
+              class="flex flex-col font-normal tracking-wide text-Dark-gray text-sm"
+            >
+              <span class="font-bold text-Very-dark-desaturated-blue text-lg"
+                >1.4K</span
+              >
+              Photos
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
